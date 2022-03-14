@@ -1,0 +1,143 @@
+body{
+    background-color: yellow;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+}
+
+.list{
+    margin: auto;
+    margin-top: -350px;
+    padding: 30%;
+}
+
+.first{
+    background-color: rgb(5, 128, 128);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0px 25px;
+    animation-name: first-row;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes first-row{
+    0%{
+        transform: skewX(0deg);
+    }
+    25%{
+        transform: skewX(20deg);
+    }
+    75%{
+        transform: skewX(-20deg);
+    }
+}
+
+.second{
+    background-color: rgb(102,51,153);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0px 25px;
+    animation-name: second-row;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes second-row{
+    0%{
+        transform: skewX(0deg);
+    }
+    25%{
+        transform: skewX(20deg);
+    }
+    75%{
+        transform: skewX(-20deg);
+    }
+}
+
+.third{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0px 25px;
+    animation-name: third-row;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes third-row{
+    100%{
+        transform:rotate(100deg) ;
+    }
+}
+
+.fourth1{
+     background-color: rgb(102,51,153);
+     width: 100px;
+     height: 100px;
+     display: inline-block;
+     margin: 0px 25px;
+     animation-name: fourth1-row;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     border: 1px solid black;
+}
+
+@keyframes fourth1-row{
+    50%{
+        transform:scaleY(50%) ;
+    }
+}
+
+.fourth2{
+    background-color: orangered;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0px 25px;
+    animation-name: fourth2-row;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border: 1px solid black;
+}
+
+@keyframes fourth2-row{
+    50%{
+        transform: scaleX(50%);
+    }
+}
+
+.fourth3{
+    background-color: tan;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0px 25px;
+    animation-name: fourth3-row;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border: 1px solid black;
+}
+
+@keyframes fourth3-row{
+    50%{
+        transform: rotate(100deg);
+    }
+}
+
+p{
+    text-align: center;
+    margin-top: -330px;
+    font-size: 40px;
+}
